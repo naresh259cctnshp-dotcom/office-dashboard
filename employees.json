@@ -1,0 +1,69 @@
+[
+  {
+    "name":"Harish",
+    "designation":"Inspector",
+    "branch":"Incharge SCRB",
+    "PMIS Code":"12345",
+    "Mobile No":"98163-09511",
+    "photo":"harish.jpg"
+  },
+  {
+    "name":"Raj Kumar",
+    "designation":"Inspector",
+    "branch":"SCRB",
+    "project":"Administration",
+    "photo":"raj_kumar.jpg"
+  },
+{
+    "name":"Ved Parkash",
+    "designation":"SI",
+    "branch":"SCRB",
+    "project":"Administration",
+    "photo":"ved_parkash.jpg"
+  },
+
+
+  {
+    "name":"Naresh",
+    "designation":"HC",
+    "branch":"SCRB",
+    "project":"Administration",
+    "photo":"naresh.jpg"
+  },
+  {
+    "name":"Navdeep",
+    "designation":"HC",
+    "branch":"SCRB",
+    "project":"eSakshya",
+    "photo":"navdeep.jpg"
+  },
+  {
+    "name":"Parveen",
+    "designation":"Constable",
+    "branch":"SCRB",
+    "project":"Support",
+    "photo":"parveen.jpg"
+  },
+  {
+    "name":"Ranjeet",
+    "designation":"Constable",
+    "branch":"SCRB",
+    "project":"Support",
+    "photo":"ranjeet.jpg"
+  },
+  {
+    "name":"Shubham",
+    "designation":"Constable",
+    "branch":"SCRB",
+    "project":"IT Support",
+    "photo":"shubham.jpg"
+  },
+ 
+  {
+    "name":"Vinod",
+    "designation":"Constable",
+    "branch":"SCRB",
+    "project":"CCTNS",
+    "photo":"vinod.jpg"
+  }
+]

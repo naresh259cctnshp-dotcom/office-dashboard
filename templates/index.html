@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>SCRB Team Dashboard</title>
+
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+
+</head>
+
+<body>
+
+<div class="main-box">
+
+<div class="heading">
+
+<div class="header-row">
+
+<img src="{{ url_for('static', filename='images/logo.png') }}"
+     class="logo">
+
+<div class="title-section">
+<h1><span class="scrb">SCRB TEAM</span> <span class="dashboard">DASHBOARD</span></h1>
+<h2>Crime & Analysis and Record Keeping</h2>
+<div id="datetime"></div>
+
+</div>
+<div class="officer-box">
+    <img src="{{ url_for('static', filename='images/officer.jpg') }}" class="officer-pic">
+
+    <div class="officer-name">
+        Rani Bindu, IGP Crime </div>
+       <div Director SCRB,CID,HP </div>
+    </div>
+</div>
+</div>
+
+</div>
+<div class="ticker">
+    <marquee behavior="scroll" direction="left" scrollamount="6">
+        📢 Welcome to SCRB Team Dashboard | Crime Analytics • Records Management • CCTNS • ICJS
+    </marquee>
+</div>
+<div class="stats">
+
+<div class="box">
+<h2>👥 {{ employees|length }}</h2>
+<p>Total Staff</p>
+</div>
+
+<div class="box">
+<h2>🏢 SCRB CID</h2>
+<p>Branch</p>
+</div>
+
+<div class="box">
+<h2>🚔 HP Police</h2>
+<p>Organization</p>
+</div>
+<div class="box">
+    <h2>👁 {{ visit_count }}</h2>
+    <p>Total Visits</p>
+</div>
+
+</div>
+<div class="cards">
+
+{% for emp in employees %}
+
+<div class="card">
+
+<img src="{{ url_for('static', filename='images/' + emp.photo) }}">
+
+
+<div class="overlay">
+
+<h3>{{ emp.name }}</h3>
+
+<p><b>Designation:</b> {{ emp.designation }}</p>
+
+<p><b>Branch:</b> {{ emp.branch }}</p>
+
+<p><b>PMIS:</b> {{ emp["PMIS Code"] }}</p>
+
+<p><b>Mobile:</b> {{ emp["Mobile No"] }}</p>
+
+</div>
+
+</div>
+
+{% endfor %}
+
+</div>
+
+<div class="footer">
+    <b>State Crime Records Bureau | CID Headquarters Shimla</b>
+    <div class="contact">
+    📧 Email: scrb-hp@nic.in | ☎ Contact: 0177-2628216
+| © 2026 State Crime Records Bureau, Himachal Pradesh Police
+</div>
+
+   
+</div>
+</div>
+
+</div>
+<script>
+function updateDateTime() {
+    const now = new Date();
+
+    const date = now.toLocaleDateString('en-IN', {
+        weekday: 'long',
+        year: 'numeric',
+        month: 'long',
+        day: 'numeric'
+    });
+
+    const time = now.toLocaleTimeString('en-IN', {
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: true
+    }).toUpperCase();
+
+    document.getElementById('datetime').innerHTML =
+        date + " | " + time;
+}
+
+setInterval(updateDateTime, 1000);
+updateDateTime();
+</script>
+</body>
+</html>
