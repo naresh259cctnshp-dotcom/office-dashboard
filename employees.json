@@ -21,7 +21,13 @@
     "project":"Administration",
     "photo":"ved_parkash.jpg"
   },
-
+{
+    "name":"Devender Dutt",
+    "designation":"SI",
+    "branch":"SCRB",
+    "project":"Administration",
+    "photo":"devender.jpg"
+  },
 
   {
     "name":"Naresh",
