@@ -44,18 +44,18 @@
     "photo":"navdeep.jpg"
   },
   {
-    "name":"Parveen",
-    "designation":"Constable",
-    "branch":"SCRB",
-    "project":"Support",
-    "photo":"parveen.jpg"
-  },
-  {
     "name":"Ranjeet",
     "designation":"Constable",
     "branch":"SCRB",
     "project":"Support",
     "photo":"ranjeet.jpg"
+  },
+  {
+    "name":"Parveen",
+    "designation":"Constable",
+    "branch":"SCRB",
+    "project":"Support",
+    "photo":"parveen.jpg"
   },
   {
     "name":"Shubham",
